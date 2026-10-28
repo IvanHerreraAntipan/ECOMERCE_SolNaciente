@@ -20,6 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Nuestra app de compras y órdenes
+    'ordenes',
     # Librerías externas
     'rest_framework',
     'corsheaders',

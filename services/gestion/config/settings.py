@@ -26,11 +26,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Librerías externas requeridas
+    # Nuestra app de usuarios y CMS
+    'usuarios',
+    # Librerías externas
     'rest_framework',
     'corsheaders',
     'drf_spectacular',
 ]
+
+# Le indicamos a Django que use nuestro modelo personalizado de Usuario:
+AUTH_USER_MODEL = 'usuarios.Usuario'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',  # Debe ir antes de CommonMiddleware
